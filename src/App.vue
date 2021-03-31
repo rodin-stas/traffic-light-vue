@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Привет"/>
+<div class="TrafficLight">
+  <Light  msg="Привет" sec=""/>
+  <Light  msg="Привет" sec=""/>
+  <Light  msg="Привет" sec=""/>
+</div>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <Light  msg="Привет" sec=""/> -->
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Light from './components/Light.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Light 
   }
 }
 </script>
 
 <style>
+body{
+
+  background-color:cornsilk;
+}
+.TrafficLight{
+  width: 120px;
+  height: 300px;
+  background-color: black;
+  border-radius: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
 }
 </style>
