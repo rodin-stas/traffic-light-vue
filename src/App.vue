@@ -1,12 +1,11 @@
 <template>
 <div class="TrafficLight">
-  <Light  msg="Привет" sec=""/>
-  <Light  msg="Привет" sec=""/>
-  <Light  msg="Привет" sec=""/>
+  <Light />
+  <Light />
+  <Light />
 </div>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <Light  msg="Привет" sec=""/> -->
-
 </template>
 
 <script>
@@ -33,6 +32,7 @@ body{
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content:space-around;
 }
 #app {

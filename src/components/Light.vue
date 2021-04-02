@@ -1,6 +1,6 @@
 <template>
-    <div class="light">
-    <div class="light_counter">
+  <div class="light">
+    <div class="light-counter" v-if="lightIsOn">
       {{sec}}
     </div>
   </div>
@@ -8,21 +8,25 @@
 
 <script>
 export default {
-  name: 'Light ',
-  props: {
-    msg: String,
-    sec: Number
-  }
-}
+  name: 'light'
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+
 .light{
+  background-color: red;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
-  margin: 0 auto;
-  background-color: aqua;
-  border-radius: 50%;
 }
+  .light_red {
+    background-color: red;
+  }
+  .light_green {
+    background-color: green;
+  }
+  .light_yellow {
+    background-color: yellow;
+  }
 </style>
